@@ -5,3 +5,7 @@ up: ## into container
 .PHONY: bash
 bash: ## into container
 	docker exec -ti test_laravel_routes_php bash
+
+.PHONY: down
+down: ## into container
+	docker-compose down
